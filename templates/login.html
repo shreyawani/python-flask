@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<form action="{{url_for('login')}}" method="POST">
+    Email : <input type="text" name="email"><br><br>
+    Password : <input type="password" name="password"><br><br>
+    <input type="submit" value="SUBMIT">
+    Not yet registered? <a href="{{url_for('signup')}}">Sign Up</a>
+</form>
+
+
+{% endblock %}
